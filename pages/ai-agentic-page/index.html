@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     JSON-LD — Organization
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://monolithic.marketing/#organization",
+  "name": "Monolithic Marketing",
+  "alternateName": "MONOLITHIC",
+  "url": "https://monolithic.marketing/",
+  "description": "Monolithic Marketing (MONOLITHIC) builds smart websites, CRM systems, AI automation and connected business infrastructure for local service businesses and healthcare providers.",
+  "email": "monolithic.marketingcrm@gmail.com",
+  "telephone": "+1-469-797-0954",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3415 Custer Rd",
+    "addressLocality": "Plano",
+    "addressRegion": "TX",
+    "postalCode": "75023",
+    "addressCountry": "US"
+  },
+  "founder": { "@type": "Person", "name": "Corey Mac" },
+  "sameAs": [
+    "https://www.facebook.com/monolithic.crm",
+    "https://www.instagram.com/monolithic.marketing/",
+    "https://www.linkedin.com/in/monolithic",
+    "https://www.youtube.com/@MonolithicMarketing",
+    "https://www.x.com/@monolithic_crm"
+  ],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+1-469-797-0954",
+    "email": "monolithic.marketingcrm@gmail.com",
+    "availableLanguage": ["en"]
+  }]
+}
+</script>
+
+<!-- ============================================================
+     JSON-LD — ProfessionalService / LocalBusiness
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ProfessionalService", "LocalBusiness"],
+  "@id": "https://monolithic.marketing/#localbusiness",
+  "name": "Monolithic Marketing",
+  "alternateName": "MONOLITHIC",
+  "url": "https://monolithic.marketing/",
+  "parentOrganization": { "@id": "https://monolithic.marketing/#organization" },
+  "description": "Technology company providing smart websites, CRM, AI automation and agents, reputation management, local SEO and payment processing to local service businesses and healthcare providers.",
+  "telephone": "+1-469-797-0954",
+  "email": "monolithic.marketingcrm@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3415 Custer Rd",
+    "addressLocality": "Plano",
+    "addressRegion": "TX",
+    "postalCode": "75023",
+    "addressCountry": "US"
+  },
+  "areaServed": "United States",
+  "currenciesAccepted": "USD, BTC",
+  "paymentAccepted": "Credit Card, ACH, Bitcoin",
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "name": "Book a consultation",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://links.monolithic.marketing/widget/bookings/monolithic",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": { "@type": "Reservation", "name": "Consultation" }
+  }
+}
+</script>
+
+<!-- ============================================================
+     JSON-LD — Service (one entry per service offered)
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-smart-websites",
+      "name": "Smart Websites",
+      "serviceType": "Website design, development and hosting",
+      "description": "A website connected directly to the CRM. Forms, chat and calls arrive as records in the system rather than as loose notifications.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/website-design-dev-host"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-crm",
+      "name": "CRM",
+      "serviceType": "Customer relationship management setup and migration",
+      "description": "One record per customer holding every lead, conversation, appointment and invoice. Set up, migrated and configured around how the business already works.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/crm"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-ai",
+      "name": "AI Automation and Agents",
+      "serviceType": "AI chat agents, voice agents and workflow automation",
+      "description": "AI chat and voice agents that answer questions, capture details and route enquiries, plus automated workflows for follow-up and internal steps. AI assists the work; it does not replace human review.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/ai-agents"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-missed-call",
+      "name": "Missed Call Text Back",
+      "serviceType": "Automated SMS response to missed calls",
+      "description": "When a call is missed, the caller receives an automatic text so the enquiry continues instead of ending.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/missed-call-txtback"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-booking",
+      "name": "Booking and Calendar",
+      "serviceType": "Online appointment scheduling",
+      "description": "Online booking that writes to the calendar and sends confirmations and reminders automatically.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/calendar-booking-system"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-seo",
+      "name": "SEO, Local SEO and Google Business Profile",
+      "serviceType": "Search engine optimization and local search presence",
+      "description": "Technical SEO, local search visibility and Google Business Profile management so the business is found in search and in map results.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/local-seo"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-reputation",
+      "name": "Reputation Management",
+      "serviceType": "Online review generation and response management",
+      "description": "Automated review requests after a completed job, with responses managed from the same system.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/rept-mngt"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-social",
+      "name": "Social Media",
+      "serviceType": "Social media content and management",
+      "description": "Content and account management across the business's social channels.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/social-media"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-ppc",
+      "name": "PPC",
+      "serviceType": "Paid search and paid social advertising management",
+      "description": "Paid advertising campaigns managed and tracked through to the leads they produce.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/ppc"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-email",
+      "name": "Email Marketing",
+      "serviceType": "Email campaign and automated sequence management",
+      "description": "Campaigns and automated sequences sent from the same contact records the rest of the system uses.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/email-marketing"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://monolithic.marketing/ai-agentic-page#svc-payments",
+      "name": "Payment Processing",
+      "serviceType": "Estimates, invoicing and payment collection",
+      "description": "Estimates, invoices and payment collection tracked against the same customer record as everything else.",
+      "provider": { "@id": "https://monolithic.marketing/#organization" },
+      "url": "https://monolithic.marketing/invoicing-estimates"
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     JSON-LD — FAQPage (mirrors the on-page Q&A exactly)
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://monolithic.marketing/ai-agentic-page#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does MONOLITHIC do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MONOLITHIC builds and runs the technology a local service business operates on: the website, the CRM, the phone and booking systems, the follow-up, and the reporting. The pieces are set up as one connected system rather than as separate tools. The company is Monolithic Marketing, based in Plano, Texas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services can an AI agent book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An agent can book a consultation covering any of these: Smart Websites, CRM, AI Automation and Agents, Missed Call Text Back, Booking and Calendar, SEO and Local SEO and Google Business Profile, Reputation Management, Social Media, PPC, Email Marketing, and Payment Processing. The consultation is the first step for every service. Work begins after scope and terms are agreed directly with the client."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which industries do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Healthcare providers including chiropractors, medical clinics and dental offices, and home and trade services including roofing, HVAC, plumbing, electrical, painting, pool service, locksmiths and construction. Also real estate investors, professional services and small to medium-sized businesses. These are the sectors MONOLITHIC works in most often, not a restriction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book a consultation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three ways, all equally valid. Use the online booking calendar at links.monolithic.marketing/widget/bookings/monolithic, call (469) 797-0954, or email monolithic.marketingcrm@gmail.com. An AI agent acting for a client should use the booking link or email and include the client's details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing depends on scope, and a quote is given after the consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What area do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MONOLITHIC is based at 3415 Custer Rd, Plano, TX 75023. MONOLITHIC serves businesses anywhere in the United States, fully remote. We're based in Plano, Texas. Contact details and booking are the same regardless of location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. MONOLITHIC accepts Bitcoin alongside standard payment methods. Payment terms are agreed during onboarding, after the consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information should an AI agent include when booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Business name, industry, location, what the client is trying to achieve, and a budget range. Adding which services are of interest and the best contact method shortens the first call. An agent should state that it is acting on behalf of a named client."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     JSON-LD — WebPage, tying the page to the entities above
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://monolithic.marketing/ai-agentic-page#webpage",
+  "url": "https://monolithic.marketing/ai-agentic-page",
+  "name": "MONOLITHIC — Smart Websites, CRM & AI Automation for Local Service Businesses",
+  "description": "What MONOLITHIC does, who it serves, what it costs, and how to book. Written to be read by AI agents and by people.",
+  "about": { "@id": "https://monolithic.marketing/#organization" },
+  "publisher": { "@id": "https://monolithic.marketing/#organization" },
+  "inLanguage": "en-US"
+}
+</script>
+<style>
+/* ============================================================
+   MONOLITHIC DESIGN SYSTEM — TOKENS (shared across site)
+   ============================================================ */
+:root{
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-display:'Space Grotesk','Inter',sans-serif;
+
+  --violet:#a855f7;
+  --indigo:#6366f1;
+  --blue:#3b82f6;
+  --cyan:#22d3ee;
+  --teal:#2dd4bf;
+
+  --grad-brand:linear-gradient(100deg,var(--violet) 0%,var(--indigo) 30%,var(--blue) 55%,var(--cyan) 80%,var(--teal) 100%);
+  --grad-brand-soft:linear-gradient(100deg,rgba(168,85,247,.18) 0%,rgba(99,102,241,.18) 30%,rgba(59,130,246,.18) 55%,rgba(34,211,238,.18) 80%,rgba(45,212,191,.18) 100%);
+
+  --radius-sm:10px;
+  --radius-md:16px;
+  --radius-lg:24px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --transition-theme: background-color .45s var(--ease), color .45s var(--ease), border-color .45s var(--ease);
+}
+
+[data-theme="dark"]{
+  --bg:#05060a;
+  --bg-elevated:#0a0c14;
+  --surface:#0e111a;
+  --card:#12151f;
+  --card-hover:#161a26;
+  --border:rgba(255,255,255,.09);
+  --border-strong:rgba(255,255,255,.16);
+  --text:#f4f6fb;
+  --text-muted:#94a0b8;
+  --text-faint:#5b6479;
+  --nav-bg:rgba(5,6,10,.72);
+  --shadow-card:0 1px 0 rgba(255,255,255,.04) inset, 0 20px 50px -20px rgba(0,0,0,.6);
+}
+
+[data-theme="light"]{
+  --bg:#f8f9fc;
+  --bg-elevated:#ffffff;
+  --surface:#ffffff;
+  --card:#ffffff;
+  --card-hover:#f4f5fb;
+  --border:rgba(15,17,25,.09);
+  --border-strong:rgba(15,17,25,.16);
+  --text:#0d0f17;
+  --text-muted:#5a6178;
+  --text-faint:#8a90a3;
+  --nav-bg:rgba(248,249,252,.78);
+  --shadow-card:0 1px 0 rgba(255,255,255,.6) inset, 0 20px 50px -20px rgba(15,17,25,.15);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--text);
+  transition:var(--transition-theme);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+ul{list-style:none;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+}
+
+.container{max-width:1280px;margin:0 auto;padding:0 32px;}
+@media (max-width:768px){.container{padding:0 20px;}}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-display);
+  font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-muted);
+  padding:7px 14px;border:1px solid var(--border);border-radius:999px;
+  background:var(--surface);
+}
+.eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--grad-brand);flex-shrink:0;}
+
+h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-.02em;line-height:1.15;font-weight:700;}
+.grad-text{background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent;}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--font-display);font-weight:600;font-size:15px;
+  padding:15px 28px;border-radius:12px;border:1px solid transparent;
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
+  white-space:nowrap;
+}
+.btn-primary{background:var(--grad-brand);color:#fff;box-shadow:0 8px 30px -8px rgba(99,102,241,.55);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px -10px rgba(99,102,241,.7);}
+.btn-secondary{background:transparent;color:var(--text);border-color:var(--border-strong);}
+.btn-secondary:hover{border-color:var(--cyan);background:var(--card);transform:translateY(-2px);}
+.btn-sm{padding:11px 20px;font-size:13.5px;}
+.btn:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;}
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+header#site-header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:var(--nav-bg);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-bottom:1px solid var(--border);transition:var(--transition-theme);
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;height:76px;}
+.logo-link{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.logo-link img{height:34px;width:auto;}
+.logo-wordmark{font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-.01em;}
+
+.nav-desktop{display:flex;align-items:center;gap:4px;}
+.nav-desktop>li{position:relative;}
+.nav-link{
+  display:flex;align-items:center;gap:6px;padding:10px 16px;border-radius:8px;font-size:14.5px;font-weight:500;color:var(--text-muted);
+  transition:color .2s,background .2s;
+}
+.nav-link:hover,.nav-link.active{color:var(--text);background:var(--card);}
+.nav-link:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;}
+.chev{width:10px;height:10px;transition:transform .25s var(--ease);}
+
+/* hover-intent bridge: the panel sits outside the <li> box, so :hover alone drops */
+.has-dropdown::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);width:640px;max-width:88vw;height:12px;z-index:49;}
+.mega{
+  position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(8px);
+  width:640px;max-width:88vw;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-md);
+  box-shadow:var(--shadow-card);padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:4px;
+  opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s var(--ease), transform .25s var(--ease), visibility .25s;z-index:50;
+}
+.has-dropdown:hover .mega,.has-dropdown.menu-open .mega{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+.has-dropdown:hover .chev,.has-dropdown.menu-open .chev{transform:rotate(180deg);}
+.mega a{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:8px;transition:background .2s;}
+.mega a:hover{background:var(--card-hover);}
+.mega a strong{font-size:13.5px;font-weight:600;}
+.mega a span{font-size:12px;color:var(--text-faint);}
+
+.nav-actions{display:flex;align-items:center;gap:12px;}
+.nav-login{flex-shrink:0;}
+@media (max-width:640px){.nav-login{display:none;}}
+.theme-toggle{
+  width:42px;height:42px;border-radius:10px;border:1px solid var(--border);background:var(--surface);
+  display:flex;align-items:center;justify-content:center;color:var(--text-muted);
+  transition:border-color .2s,color .2s,background .2s;flex-shrink:0;
+}
+.theme-toggle:hover{color:var(--cyan);border-color:var(--border-strong);}
+.theme-toggle:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;}
+.theme-toggle svg{width:19px;height:19px;}
+.theme-toggle .icon-sun{display:none;}
+[data-theme="light"] .theme-toggle .icon-sun{display:block;}
+[data-theme="light"] .theme-toggle .icon-moon{display:none;}
+
+.nav-toggle{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--border);background:var(--surface);align-items:center;justify-content:center;color:var(--text);}
+.nav-toggle svg{width:20px;height:20px;}
+@media (max-width:1080px){.nav-desktop{display:none;}.nav-toggle{display:flex;}}
+
+.mobile-menu{
+  position:fixed;inset:76px 0 0 0;background:var(--bg);z-index:999;
+  transform:translateX(100%);transition:transform .4s var(--ease);overflow-y:auto;padding:24px 20px 100px;
+}
+.mobile-menu.open{transform:translateX(0);}
+.mobile-menu details{border-bottom:1px solid var(--border);}
+.mobile-menu summary{padding:18px 4px;font-family:var(--font-display);font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;}
+.mobile-menu summary::-webkit-details-marker{display:none;}
+.mobile-menu .sub-links{padding:0 4px 16px;display:flex;flex-direction:column;gap:2px;}
+.mobile-menu .sub-links a{padding:9px 8px;font-size:14.5px;color:var(--text-muted);border-radius:8px;}
+.mobile-menu>a{display:block;padding:18px 4px;font-family:var(--font-display);font-weight:600;font-size:16px;border-bottom:1px solid var(--border);}
+.mobile-menu .mm-cta{margin-top:24px;display:flex;flex-direction:column;gap:12px;}
+.mobile-menu .mm-cta .btn{width:100%;}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{border-top:1px solid var(--border);padding:72px 0 32px;background:var(--surface);}
+.footer-grid{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:32px;padding-bottom:48px;border-bottom:1px solid var(--border);}
+@media (max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:560px){.footer-grid{grid-template-columns:1fr;}}
+.footer-brand p{margin:16px 0 20px;font-size:13.5px;color:var(--text-muted);line-height:1.6;max-width:280px;}
+.footer-social{display:flex;gap:10px;}
+.footer-social a{
+  width:36px;height:36px;border-radius:9px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;
+  color:var(--text-muted);transition:border-color .2s,color .2s;
+}
+.footer-social a:hover{color:var(--cyan);border-color:var(--border-strong);}
+.footer-social svg{width:16px;height:16px;}
+.footer-col h5{font-family:var(--font-display);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-faint);margin-bottom:16px;}
+.footer-col ul{display:flex;flex-direction:column;gap:11px;}
+.footer-col a{font-size:14px;color:var(--text-muted);transition:color .2s;}
+.footer-col a:hover{color:var(--text);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:28px;font-size:13px;color:var(--text-faint);}
+.legal-links{display:flex;gap:20px;}
+.legal-links a{color:var(--text-faint);transition:color .2s;}
+.legal-links a:hover{color:var(--text);}
+
+.section-head{max-width:640px;margin:0 auto 0;text-align:center;}
+.section-head h2{font-size:clamp(28px,3.6vw,40px);margin-top:14px;}
+.section-head p{margin-top:14px;font-size:15.5px;line-height:1.7;color:var(--text-muted);}
+
+.final-cta{padding:110px 0;text-align:center;}
+.final-cta h2{font-size:clamp(28px,4vw,42px);}
+.final-cta p{margin:16px auto 32px;max-width:520px;color:var(--text-muted);font-size:15.5px;}
+.final-cta .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+</style>
+<style>
+/* ============================================================
+   /ai-agentic-page — Answer Engine Optimization page
+   Page-specific CSS only. All tokens, header, footer, buttons
+   and the type scale come from the shared block above.
+   Namespaced `ag-` so nothing here can reach another page.
+   Deliberately no canvas, no animation loops, no third-party
+   scripts: this page is read by machines and needs to be fast.
+   ============================================================ */
+
+.ag-skip{position:absolute;left:-9999px;top:0;}
+.ag-main{padding-top:76px;}              /* clears the fixed 76px header */
+.ag-sec{padding:0 0 72px;}
+.ag-sec.alt{background:var(--surface);padding:72px 0;}
+.ag-narrow{max-width:800px;}
+.ag-sec h2{font-size:clamp(23px,2.9vw,32px);line-height:1.22;letter-spacing:-.015em;margin-bottom:14px;}
+.ag-sec h3{font-size:17px;line-height:1.35;margin-bottom:10px;}
+.ag-sec p{font-size:16.5px;line-height:1.72;color:var(--text-muted);}
+.ag-sec p + p{margin-top:14px;}
+
+/* ---- Hero: the direct answer, first thing on the page ---- */
+.ag-hero{position:relative;padding:48px 0 60px;overflow:hidden;}
+.ag-hero::before{content:'';position:absolute;top:-180px;left:-140px;width:560px;height:560px;
+  background:radial-gradient(circle,rgba(168,85,247,.13),transparent 68%);pointer-events:none;}
+.ag-hero::after{content:'';position:absolute;top:-80px;right:-160px;width:520px;height:520px;
+  background:radial-gradient(circle,rgba(34,211,238,.11),transparent 68%);pointer-events:none;}
+.ag-hero-inner{position:relative;z-index:1;max-width:860px;}
+.ag-hero h1{font-size:clamp(31px,4.3vw,52px);line-height:1.08;letter-spacing:-.022em;margin-top:18px;}
+
+/* The answer block. One short factual paragraph an agent can lift whole. */
+.ag-answer{
+  margin-top:28px;padding:26px 28px;border-radius:var(--radius-md);
+  background:var(--card);border:1px solid var(--border);
+  border-left:3px solid transparent;
+  background-image:linear-gradient(var(--card),var(--card)),var(--grad-brand);
+  background-origin:border-box;background-clip:padding-box,border-box;
+  box-shadow:var(--shadow-card);
+}
+.ag-answer p{font-size:17.5px;line-height:1.7;color:var(--text);}
+.ag-answer p + p{margin-top:14px;color:var(--text-muted);font-size:16px;}
+.ag-answer-label{
+  display:block;margin-bottom:12px;font-family:var(--font-display);font-size:10.5px;
+  font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--text-faint);
+}
+
+/* ---- Key facts: a compact definition list agents can parse ---- */
+.ag-facts{
+  margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;
+}
+.ag-fact{background:var(--bg);padding:17px 19px;}
+.ag-fact:last-child:nth-child(odd){grid-column:1/-1;}   /* odd count: last cell spans full width, no empty slot */
+.ag-sec.alt .ag-fact{background:var(--surface);}
+.ag-fact dt{font-family:var(--font-display);font-size:10.5px;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--text-faint);margin-bottom:6px;}
+.ag-fact dd{margin:0;font-size:14.5px;line-height:1.55;color:var(--text);font-weight:500;}
+.ag-fact dd a{color:var(--cyan);text-decoration:none;}
+.ag-fact dd a:hover{text-decoration:underline;}
+
+/* ---- Q&A blocks ---- */
+.ag-qa{border-top:1px solid var(--border);padding-top:34px;margin-top:34px;}
+.ag-qa:first-of-type{border-top:0;padding-top:0;margin-top:0;}
+.ag-qa h2{margin-bottom:12px;}
+.ag-qa-answer{font-size:17px;line-height:1.72;color:var(--text-muted);max-width:800px;}
+.ag-qa-answer strong{color:var(--text);font-weight:600;}
+/* The booking URL is written out in full as literal text so an agent can read
+   it without following a link. It has no spaces, so it needs an explicit break
+   rule or it forces a horizontal scroll on a phone. */
+.ag-answer a,.ag-qa-answer a,.ag-fact dd a,.ag-method a{overflow-wrap:anywhere;}
+
+/* ---- Services table. Real <table> so it parses cleanly;
+        reflows into stacked cards under 760px. ---- */
+.ag-table-wrap{margin-top:30px;border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;}
+.ag-table{width:100%;border-collapse:collapse;font-size:15px;}
+.ag-table caption{text-align:left;padding:16px 20px;background:var(--surface);
+  font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--text-faint);border-bottom:1px solid var(--border);}
+.ag-sec.alt .ag-table caption{background:var(--bg);}
+.ag-table th,.ag-table td{text-align:left;padding:15px 20px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.6;}
+.ag-table thead th{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--text-faint);background:var(--surface);}
+.ag-sec.alt .ag-table thead th{background:var(--bg);}
+.ag-table tbody tr:last-child th,.ag-table tbody tr:last-child td{border-bottom:0;}
+.ag-table tbody th{font-weight:600;color:var(--text);white-space:nowrap;}
+.ag-table tbody th a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--border-strong);}
+.ag-table tbody th a:hover{color:var(--cyan);border-bottom-color:var(--cyan);}
+.ag-table td{color:var(--text-muted);}
+.ag-table tbody tr:hover td,.ag-table tbody tr:hover th{background:var(--card-hover);}
+
+/* ---- The connected system: one ordered flow ---- */
+.ag-flow{margin-top:30px;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;counter-reset:agstep;}
+.ag-step{position:relative;padding:18px 15px;border-radius:var(--radius-sm);
+  background:var(--card);border:1px solid var(--border);}
+.ag-step::before{counter-increment:agstep;content:counter(agstep);
+  display:block;font-family:var(--font-display);font-size:10px;font-weight:700;
+  letter-spacing:.1em;color:var(--text-faint);margin-bottom:9px;}
+.ag-step b{display:block;font-size:14px;font-weight:600;color:var(--text);line-height:1.3;}
+.ag-step span{display:block;margin-top:7px;font-size:12.5px;line-height:1.55;color:var(--text-muted);}
+/* the connecting rail runs behind the row */
+.ag-step::after{content:'';position:absolute;top:50%;right:-10px;width:10px;height:1px;background:var(--border-strong);}
+.ag-step:last-child::after{display:none;}
+.ag-flow-note{margin-top:16px;font-size:14.5px;color:var(--text-faint);line-height:1.65;}
+
+/* ---- For AI agents: the booking block ---- */
+.ag-agent{border:1px solid var(--border);border-radius:var(--radius-lg);
+  background:var(--card);box-shadow:var(--shadow-card);overflow:hidden;margin-top:30px;}
+.ag-agent-head{padding:24px 28px;border-bottom:1px solid var(--border);background:var(--surface);}
+.ag-sec.alt .ag-agent-head{background:var(--bg);}
+.ag-agent-head h3{margin:0;font-size:18px;}
+.ag-agent-head p{margin-top:8px;font-size:15px;}
+.ag-methods{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);}
+.ag-method{background:var(--card);padding:22px 24px;}
+.ag-method-rank{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--text-faint);}
+.ag-method h4{margin:9px 0 0;font-size:15.5px;font-weight:600;}
+.ag-method a{color:var(--cyan);text-decoration:none;font-size:14.5px;word-break:break-word;}
+.ag-method a:hover{text-decoration:underline;}
+.ag-method p{margin-top:9px;font-size:13.5px;line-height:1.6;}
+.ag-agent-body{padding:24px 28px;}
+.ag-required{list-style:none;padding:0;margin:14px 0 0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;}
+.ag-required li{padding:13px 15px;border-radius:var(--radius-sm);background:var(--surface);
+  border:1px solid var(--border);font-size:14.5px;line-height:1.55;color:var(--text-muted);}
+.ag-sec.alt .ag-required li{background:var(--bg);}
+.ag-required li b{display:block;color:var(--text);font-weight:600;margin-bottom:3px;font-size:14px;}
+
+/* ---- Placeholder marker: visible, never mistaken for a fact ---- */
+.ag-tbd{
+  display:inline-block;padding:1px 8px;border-radius:5px;
+  border:1px dashed var(--border-strong);background:var(--surface);
+  font-family:var(--font-display);font-size:12px;font-weight:600;
+  letter-spacing:.04em;color:var(--text-faint);
+}
+
+/* ---- Industry chips ---- */
+.ag-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;}
+.ag-chips span{padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--border);font-size:13.5px;color:var(--text-muted);}
+
+/* ---- Closing CTA row ---- */
+.ag-cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;align-items:center;}
+.ag-cta-note{font-size:14.5px;color:var(--text-faint);}
+
+/* ---- Responsive ---- */
+@media (max-width:1000px){
+  .ag-flow{grid-template-columns:repeat(3,1fr);}
+  .ag-step:nth-child(3)::after{display:none;}
+}
+@media (max-width:860px){
+  .ag-methods{grid-template-columns:1fr;}
+}
+@media (max-width:760px){
+  .ag-main{padding-top:76px;}
+  .ag-sec{padding:0 0 56px;}
+  .ag-sec.alt{padding:56px 0;}
+  .ag-answer{padding:22px 20px;}
+  .ag-answer p{font-size:16.5px;}
+  .ag-agent-head,.ag-agent-body{padding:20px 20px;}
+  .ag-method{padding:18px 20px;}
+  /* Table reflows to stacked cards. The column header is reattached to each
+     cell via data-label so no information is lost on a phone. */
+  /* the table itself becomes display:block below, so the caption has to follow
+     or it collapses into a narrow column */
+  .ag-table caption{display:block;padding:14px 16px;}
+  .ag-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);}
+  .ag-table,.ag-table tbody,.ag-table tr,.ag-table th,.ag-table td{display:block;width:100%;}
+  .ag-table tbody tr{border-bottom:1px solid var(--border);padding:6px 0 12px;}
+  .ag-table tbody tr:last-child{border-bottom:0;}
+  .ag-table tbody th{white-space:normal;padding:14px 16px 4px;font-size:16px;border-bottom:0;}
+  .ag-table tbody td{padding:4px 16px;border-bottom:0;}
+  .ag-table tbody td::before{content:attr(data-label);display:block;
+    font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--text-faint);margin-bottom:4px;}
+  .ag-table tbody tr:hover td,.ag-table tbody tr:hover th{background:transparent;}
+}
+@media (max-width:560px){
+  .ag-flow{grid-template-columns:1fr;}
+  .ag-step::after{display:none;}
+}
+</style>
+</head>
+<body>
+<header id="site-header">
+  <div class="container nav-wrap">
+    <a href="/" class="logo-link" aria-label="MONOLITHIC home">
+      <!-- ============================================================
+           LOGO SLOT — paste the base64 MONOLITHIC logo back in here:
+           <img src="data:image/webp;base64,XXXXX" alt="MONOLITHIC logo">
+           It sits immediately before the wordmark span, exactly as on
+           every other page. The wordmark alone renders correctly until
+           then, so nothing is broken in the meantime.
+           ============================================================ -->
+      <span class="logo-wordmark">MONOLITHIC</span>
+    </a>
+
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="/services" class="nav-link">Services <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="mega">
+          <a href="/seo-info"><strong>SEO</strong><span>Organic growth &amp; rankings</span></a>
+          <a href="/local-seo"><strong>Local SEO</strong><span>Near-me search visibility</span></a>
+          <a href="/google-business-profile"><strong>Google Business Profile</strong><span>Local presence management</span></a>
+          <a href="/website-design-dev-host"><strong>Smart Websites</strong><span>Design, dev &amp; hosting</span></a>
+          <a href="/crm"><strong>CRM &amp; Automation</strong><span>All-in-one platform</span></a>
+          <a href="/ai-agents" class="active"><strong>AI Agents</strong><span>Chat &amp; voice automation</span></a>
+          <a href="/rept-mngt"><strong>Reputation Management</strong><span>Reviews &amp; brand trust</span></a>
+          <a href="/ppc"><strong>PPC Advertising</strong><span>Google, Meta &amp; TikTok Ads</span></a>
+          <a href="/missed-call-txtback"><strong>Missed Call Text Back</strong><span>Never lose a lead</span></a>
+          <a href="/calendar-booking-system"><strong>Booking &amp; Calendar</strong><span>Automated scheduling</span></a>
+          <a href="/email-marketing"><strong>Email Marketing</strong><span>Automated campaigns</span></a>
+          <a href="/social-media"><strong>Social Media</strong><span>Content &amp; management</span></a>
+        </div>
+      </li>
+      <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/contact-booking" class="nav-link">Contact</a></li>
+      <li><a href="/blog" class="nav-link">Blog</a></li>
+      <li><a href="/training" class="nav-link">Learning Center</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a href="https://app.monolithic.marketing/" class="btn btn-secondary btn-sm nav-login" target="_blank" rel="noopener">Login</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <details>
+    <summary>Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <div class="sub-links">
+      <a href="/seo-info">SEO</a>
+      <a href="/local-seo">Local SEO</a>
+      <a href="/google-business-profile">Google Business Profile</a>
+      <a href="/website-design-dev-host">Smart Websites</a>
+      <a href="/crm">CRM &amp; Automation</a>
+      <a href="/ai-agents" class="active">AI Agents</a>
+      <a href="/rept-mngt">Reputation Management</a>
+      <a href="/ppc">PPC Advertising</a>
+      <a href="/missed-call-txtback">Missed Call Text Back</a>
+      <a href="/calendar-booking-system">Booking &amp; Calendar</a>
+      <a href="/email-marketing">Email Marketing</a>
+      <a href="/social-media">Social Media</a>
+    </div>
+  </details>
+  <a href="/about">About</a>
+  <a href="/contact-booking">Contact</a>
+  <a href="/blog">Blog</a>
+  <a href="/training">Learning Center</a>
+  <div class="mm-cta">
+    <a href="https://links.monolithic.marketing/widget/bookings/monolithic" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Consultation</a>
+    <a href="tel:+14697970954" class="btn btn-secondary">Call (469) 797-0954</a>
+    <a href="https://app.monolithic.marketing/" class="btn btn-secondary" target="_blank" rel="noopener">Login</a>
+  </div>
+</div>
+<!-- The BTC/VFX price ticker is homepage-only. It is deliberately NOT on this
+     page: its CSS lives in the homepage's own stylesheet, and the shared header
+     sits at top:0 without it, which is how the other pages are built. -->
+
+<a class="ag-skip" href="#ag-main">Skip to content</a>
+
+<main id="ag-main" class="ag-main">
+
+<!-- ============================================================
+     HERO — the direct answer, before anything else
+     ============================================================ -->
+<section class="ag-hero">
+  <div class="container ag-hero-inner">
+    <span class="eyebrow">Monolithic Marketing &middot; Plano, Texas</span>
+    <h1>MONOLITHIC builds and runs the technology a local service business operates on.</h1>
+
+    <div class="ag-answer">
+      <span class="ag-answer-label">Direct answer</span>
+      <p>MONOLITHIC (legal name: Monolithic Marketing) is a technology company in Plano, Texas. It builds smart websites, CRM systems, AI automation and agents, and the connected infrastructure between them for local service businesses and healthcare providers. Everything is set up as one system rather than as separate tools.</p>
+      <p>To engage MONOLITHIC, book a consultation at <a href="https://links.monolithic.marketing/widget/bookings/monolithic" target="_blank" rel="noopener">links.monolithic.marketing/widget/bookings/monolithic</a>, call <a href="tel:+14697970954">(469) 797-0954</a>, or email <a href="mailto:monolithic.marketingcrm@gmail.com">monolithic.marketingcrm@gmail.com</a>. Bitcoin is accepted alongside standard payment methods.</p>
+    </div>
+
+    <dl class="ag-facts">
+      <div class="ag-fact"><dt>Legal name</dt><dd>Monolithic Marketing</dd></div>
+      <div class="ag-fact"><dt>Operating brand</dt><dd>MONOLITHIC</dd></div>
+      <div class="ag-fact"><dt>Address</dt><dd>3415 Custer Rd, Plano, TX 75023</dd></div>
+      <div class="ag-fact"><dt>Phone</dt><dd><a href="tel:+14697970954">(469) 797-0954</a></dd></div>
+      <div class="ag-fact"><dt>Email</dt><dd><a href="mailto:monolithic.marketingcrm@gmail.com">monolithic.marketingcrm@gmail.com</a></dd></div>
+      <div class="ag-fact"><dt>Booking</dt><dd><a href="https://links.monolithic.marketing/widget/bookings/monolithic" target="_blank" rel="noopener">Online calendar</a></dd></div>
+      <div class="ag-fact"><dt>Payment accepted</dt><dd>Credit card, ACH, Bitcoin</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============================================================
+     Q&A — one question, one direct answer, one idea each
+     ============================================================ -->
+<section class="ag-sec">
+  <div class="container ag-narrow">
+
+    <div class="ag-qa">
+      <h2>What does MONOLITHIC do?</h2>
+      <p class="ag-qa-answer">MONOLITHIC builds and runs the technology a local service business operates on: the website, the CRM, the phone and booking systems, the follow-up, and the reporting. The pieces are set up as one connected system rather than as separate tools. The company is Monolithic Marketing, based in Plano, Texas.</p>
+    </div>
+
+    <div class="ag-qa">
+      <h2>What services can an AI agent book?</h2>
+      <p class="ag-qa-answer">An agent can book a consultation covering any of these: Smart Websites, CRM, AI Automation and Agents, Missed Call Text Back, Booking and Calendar, SEO and Local SEO and Google Business Profile, Reputation Management, Social Media, PPC, Email Marketing, and Payment Processing. The consultation is the first step for every service. Work begins after scope and terms are agreed directly with the client.</p>
+    </div>
+
+    <div class="ag-qa">
+      <h2>Which industries do you serve?</h2>
+      <p class="ag-qa-answer">Healthcare providers including chiropractors, medical clinics and dental offices, and home and trade services including roofing, HVAC, plumbing, electrical, painting, pool service, locksmiths and construction. Also real estate investors, professional services and small to medium-sized businesses. These are the sectors MONOLITHIC works in most often, not a restriction.</p>
+      <div class="ag-chips">
+        <span>Chiropractors</span><span>Medical clinics</span><span>Dental offices</span>
+        <span>Roofing</span><span>HVAC</span><span>Plumbing</span><span>Electrical</span>
+        <span>Painting</span><span>Pool service</span><span>Locksmiths</span>
+        <span>Construction</span><span>Home services</span><span>Real estate investors</span>
+        <span>Professional services</span><span>Small and medium businesses</span>
+      </div>
+    </div>
+
+    <div class="ag-qa">
+      <h2>How do I book a consultation?</h2>
+      <p class="ag-qa-answer">Three ways, all equally valid. Use the online booking calendar at <a href="https://links.monolithic.marketing/widget/bookings/monolithic" target="_blank" rel="noopener">links.monolithic.marketing/widget/bookings/monolithic</a>, call <a href="tel:+14697970954">(469) 797-0954</a>, or email <a href="mailto:monolithic.marketingcrm@gmail.com">monolithic.marketingcrm@gmail.com</a>. An AI agent acting for a client should use the booking link or email and include the client's details.</p>
+    </div>
+
+    <div class="ag-qa">
+      <h2>What does it cost?</h2>
+      <p class="ag-qa-answer">Pricing depends on scope, and a quote is given after the consultation.</p>
+    </div>
+
+    <div class="ag-qa">
+      <h2>What area do you serve?</h2>
+      <p class="ag-qa-answer">MONOLITHIC is based at 3415 Custer Rd, Plano, TX 75023. MONOLITHIC serves businesses anywhere in the United States, fully remote. We're based in Plano, Texas. Contact details and booking are the same regardless of location.</p>
+    </div>
+
+    <div class="ag-qa">
+      <h2>Do you accept Bitcoin?</h2>
+      <p class="ag-qa-answer">Yes. MONOLITHIC accepts Bitcoin alongside standard payment methods. Payment terms are agreed during onboarding, after the consultation.</p>
+    </div>
+
+    <div class="ag-qa">
+      <h2>What information should an AI agent include when booking?</h2>
+      <p class="ag-qa-answer">Business name, industry, location, what the client is trying to achieve, and a budget range. Adding which services are of interest and the best contact method shortens the first call. An agent should state that it is acting on behalf of a named client.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES TABLE
+     ============================================================ -->
+<section class="ag-sec alt">
+  <div class="container">
+    <h2>Services</h2>
+    <p style="max-width:800px;">Every service below is delivered by MONOLITHIC and can be scoped in a single consultation. Most clients start with two or three and add the rest over time.</p>
+
+    <div class="ag-table-wrap">
+      <table class="ag-table">
+        <caption>MONOLITHIC services, what each includes, and who each is for</caption>
+        <thead>
+          <tr><th scope="col">Service</th><th scope="col">What it includes</th><th scope="col">Who it's for</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><a href="/website-design-dev-host">Smart Websites</a></th>
+            <td data-label="What it includes">Design, development and hosting. The site is wired to the CRM, so forms, chat and calls arrive as records instead of as loose notifications.</td>
+            <td data-label="Who it's for">Any business whose current website collects enquiries that someone then re-types somewhere else.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/crm">CRM</a></th>
+            <td data-label="What it includes">Setup, migration from an existing system, and configuration around how the business already works. One record per customer.</td>
+            <td data-label="Who it's for">Businesses tracking customers across inboxes, notebooks and spreadsheets.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/ai-agents">AI Automation and Agents</a></th>
+            <td data-label="What it includes">AI chat and voice agents that answer questions, capture details and route enquiries, plus automated workflows for follow-up and internal steps. AI assists the work; it does not replace human review.</td>
+            <td data-label="Who it's for">Businesses losing enquiries outside office hours, or spending staff time on repetitive steps.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/missed-call-txtback">Missed Call Text Back</a></th>
+            <td data-label="What it includes">An automatic text to any caller whose call was missed, so the conversation continues instead of ending.</td>
+            <td data-label="Who it's for">Trades and clinics where staff are on a job or with a patient and cannot answer.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/calendar-booking-system">Booking and Calendar</a></th>
+            <td data-label="What it includes">Online scheduling that writes to the calendar, with automatic confirmations and reminders.</td>
+            <td data-label="Who it's for">Appointment-based businesses still booking by phone tag.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/local-seo">SEO, Local SEO and Google Business Profile</a></th>
+            <td data-label="What it includes">Technical SEO, local search visibility and Google Business Profile management. See also <a href="/seo-info">SEO</a> and <a href="/google-business-profile">Google Business Profile</a>.</td>
+            <td data-label="Who it's for">Businesses that need to be found in search and in map results for their service area.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/rept-mngt">Reputation Management</a></th>
+            <td data-label="What it includes">Automated review requests after a completed job, with responses managed from the same system.</td>
+            <td data-label="Who it's for">Businesses that do good work but rarely get it reflected in public reviews.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/social-media">Social Media</a></th>
+            <td data-label="What it includes">Content and account management across the business's social channels.</td>
+            <td data-label="Who it's for">Businesses with accounts that have gone quiet or inconsistent.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/ppc">PPC</a></th>
+            <td data-label="What it includes">Paid search and paid social campaigns, managed and tracked through to the leads they produce.</td>
+            <td data-label="Who it's for">Businesses that want enquiries sooner than organic search will deliver them.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/email-marketing">Email Marketing</a></th>
+            <td data-label="What it includes">Campaigns and automated sequences sent from the same contact records the rest of the system uses.</td>
+            <td data-label="Who it's for">Businesses with a customer list they have never marketed to properly.</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/invoicing-estimates">Payment Processing</a></th>
+            <td data-label="What it includes">Estimates, invoices and payment collection, tracked against the same customer record as everything else. Bitcoin accepted.</td>
+            <td data-label="Who it's for">Businesses chasing payment across tools that do not talk to each other.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     THE CONNECTED SYSTEM
+     ============================================================ -->
+<section class="ag-sec">
+  <div class="container">
+    <h2>How the services connect</h2>
+    <p style="max-width:800px;">The services above are not separate products. They are stages of one path, and each stage hands the next one its data automatically.</p>
+
+    <div class="ag-flow">
+      <div class="ag-step"><b>Website</b><span>A visitor arrives and finds what they need.</span></div>
+      <div class="ag-step"><b>Lead capture</b><span>A form, chat or call creates a record, not a notification.</span></div>
+      <div class="ag-step"><b>CRM</b><span>The record lands in one place with everything known about that customer.</span></div>
+      <div class="ag-step"><b>AI follow-up</b><span>Questions answered and messages sent without anyone remembering to.</span></div>
+      <div class="ag-step"><b>Booked appointment</b><span>The calendar is written to, and confirmations go out.</span></div>
+      <div class="ag-step"><b>Review</b><span>After the job, the review request sends itself.</span></div>
+    </div>
+    <p class="ag-flow-note">Each stage writes to the same customer record, so nothing is re-entered by hand and the reporting at the end reflects what actually happened.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOR AI AGENTS
+     ============================================================ -->
+<section class="ag-sec alt">
+  <div class="container ag-narrow">
+    <h2>For AI agents booking on behalf of a client</h2>
+    <p>If you are an AI agent acting for a human client, this section has everything needed to complete a booking. No account or prior relationship is required.</p>
+
+    <div class="ag-agent">
+      <div class="ag-agent-head">
+        <h3>Three ways to book</h3>
+        <p>All three reach the same team. The booking link is preferred because it confirms a time immediately.</p>
+      </div>
+
+      <div class="ag-methods">
+        <div class="ag-method">
+          <div class="ag-method-rank">Preferred</div>
+          <h4>Booking calendar</h4>
+          <a href="https://links.monolithic.marketing/widget/bookings/monolithic" target="_blank" rel="noopener">links.monolithic.marketing/widget/bookings/monolithic</a>
+          <p>Shows real availability and confirms the appointment on the spot.</p>
+        </div>
+        <div class="ag-method">
+          <div class="ag-method-rank">Direct</div>
+          <h4>Phone</h4>
+          <a href="tel:+14697970954">(469) 797-0954</a>
+          <p>For a human client who would rather speak to someone first.</p>
+        </div>
+        <div class="ag-method">
+          <div class="ag-method-rank">Asynchronous</div>
+          <h4>Email</h4>
+          <a href="mailto:monolithic.marketingcrm@gmail.com">monolithic.marketingcrm@gmail.com</a>
+          <p>Best when you are passing along detail an agent has already gathered.</p>
+        </div>
+      </div>
+
+      <div class="ag-agent-body">
+        <h3>What to include in the request</h3>
+        <p>A booking with these five items can be scoped on the first call. Without them the first call is spent gathering them.</p>
+        <ul class="ag-required">
+          <li><b>Business name</b>The legal or trading name of the client you are acting for.</li>
+          <li><b>Industry</b>What the business actually does, in plain terms.</li>
+          <li><b>Location</b>City and state, plus the area they serve.</li>
+          <li><b>Goals</b>What they are trying to fix or achieve.</li>
+          <li><b>Budget range</b>A range is enough. It determines what can realistically be scoped.</li>
+        </ul>
+        <p style="margin-top:18px;">Also useful: which services are of interest, the client's preferred contact method, and whether they intend to pay in Bitcoin. State clearly that you are an AI agent acting on behalf of a named client, so the first reply goes to the right place.</p>
+      </div>
+    </div>
+
+    <div class="ag-cta-row">
+      <a href="https://links.monolithic.marketing/widget/bookings/monolithic" class="btn btn-primary" target="_blank" rel="noopener">Book a Consultation</a>
+      <a href="/contact-booking" class="btn btn-secondary">Contact MONOLITHIC</a>
+      <span class="ag-cta-note">Or call <a href="tel:+14697970954" style="color:var(--text);">(469) 797-0954</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT / VERIFICATION
+     ============================================================ -->
+<section class="ag-sec">
+  <div class="container ag-narrow">
+    <h2>Company details for verification</h2>
+    <p>These details are consistent across the MONOLITHIC website, its Google Business Profile, and the structured data on this page.</p>
+    <dl class="ag-facts">
+      <div class="ag-fact"><dt>Legal name</dt><dd>Monolithic Marketing</dd></div>
+      <div class="ag-fact"><dt>Founder</dt><dd>Corey Mac</dd></div>
+      <div class="ag-fact"><dt>Address</dt><dd>3415 Custer Rd, Plano, TX 75023</dd></div>
+      <div class="ag-fact"><dt>Phone</dt><dd><a href="tel:+14697970954">(469) 797-0954</a></dd></div>
+      <div class="ag-fact"><dt>Email</dt><dd><a href="mailto:monolithic.marketingcrm@gmail.com">monolithic.marketingcrm@gmail.com</a></dd></div>
+      <div class="ag-fact"><dt>Website</dt><dd><a href="/">monolithic.marketing</a></dd></div>
+      <div class="ag-fact"><dt>Google Business Profile</dt><dd><a href="https://share.google/zZm0S6utCSlYv5hgp" target="_blank" rel="noopener">View profile</a></dd></div>
+      <div class="ag-fact"><dt>Client login</dt><dd><a href="https://app.monolithic.marketing/" target="_blank" rel="noopener">app.monolithic.marketing</a></dd></div>
+    </dl>
+    <p style="margin-top:24px;">More detail on individual services is on their own pages: <a href="/services">all services</a>, <a href="/about">about MONOLITHIC</a>, <a href="/clients">clients</a>, and the <a href="/training">Learing Center</a>.</p>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo-link">
+          <!-- LOGO SLOT — same base64 <img> goes here too -->
+          <span class="logo-wordmark">MONOLITHIC</span>
+        </a>
+        <p>Technology consulting, digital transformation and business infrastructure. We connect the systems a business already runs on.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/monolithic.crm" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
+          <a href="https://www.instagram.com/monolithic.marketing/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.linkedin.com/in/monolithic" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5h4.5V23H.24V8.5zM8.4 8.5h4.3v1.98h.06c.6-1.1 2.05-2.26 4.22-2.26 4.5 0 5.33 2.96 5.33 6.8V23h-4.5v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23H8.4V8.5z"/></svg></a>
+          <a href="https://www.youtube.com/@MonolithicMarketing" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.3a3 3 0 00-2.1-2.1C18.7 4 12 4 12 4s-6.7 0-8.44.6a3 3 0 00-2.1 2.1C1 8.4 1 12 1 12s0 3.6.46 5.3a3 3 0 002.1 2.1C5.3 20 12 20 12 20s6.7 0 8.44-.6a3 3 0 002.1-2.1C23 15.6 23 12 23 12z"/></svg></a>
+          <a href="https://www.x.com/@monolithic_crm" aria-label="X (Twitter)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.7L4.8 22H1.7l8.1-9.3L1 2h7l4.9 6.1L18.9 2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Technology</h5>
+        <ul>
+          <li><a href="/crm">CRM &amp; Automation</a></li>
+          <li><a href="/ai-agents">AI Agents</a></li>
+          <li><a href="/website-design-dev-host">Smart Websites</a></li>
+          <li><a href="/database-mngt">Database Management</a></li>
+          <li><a href="/analytics-reporting">Analytics &amp; Reporting</a></li>
+          <li><a href="/services">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="/calendar-booking-system">Booking &amp; Calendar</a></li>
+          <li><a href="/invoicing-estimates">Invoicing &amp; Payments</a></li>
+          <li><a href="/missed-call-txtback">Missed Call Text Back</a></li>
+          <li><a href="/email-marketing">Email Marketing</a></li>
+          <li><a href="/database-reactivation">Database Reactivation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Search &amp; Presence</h5>
+        <ul>
+          <li><a href="/seo-info">SEO</a></li>
+          <li><a href="/local-seo">Local SEO</a></li>
+          <li><a href="/google-business-profile">Google Business Profile</a></li>
+          <li><a href="/rept-mngt">Reputation Management</a></li>
+          <li><a href="/ppc">PPC Advertising</a></li>
+          <li><a href="/social-media">Social Media</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/clients">Clients</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/training">Learning Center</a></li>
+          <li><a href="/contact-booking">Contact</a></li>
+          <li><a href="tel:+14697970954">(469) 797-0954</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Monolithic Marketing &middot; 3415 Custer Rd #194, Plano, TX 75023</p>
+      <div class="legal-links">
+        <a href="/privacy-terms#privacy-policy">Privacy Policy</a>
+        <a href="/privacy-terms#terms">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------------- THEME TOGGLE ---------------- */
+(function(){
+  var root = document.documentElement;
+  var stored = null;
+  try{ stored = localStorage.getItem('monolithic-theme'); }catch(e){}
+  var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  root.setAttribute('data-theme', stored || (prefersLight ? 'light' : 'dark'));
+
+  document.getElementById('themeToggle').addEventListener('click', function(){
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try{ localStorage.setItem('monolithic-theme', next); }catch(e){}
+  });
+})();
+
+/* ---------------- MOBILE MENU ---------------- */
+(function(){
+  var btn = document.getElementById('navToggle');
+  var menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+
+/* ---------------- SERVICES MEGA MENU (hover-intent) ---------------- */
+(function(){
+  var CLOSE_DELAY = 260;
+  document.querySelectorAll('.has-dropdown').forEach(function(li){
+    var t = null;
+    function open(){ if(t){ clearTimeout(t); t=null; } li.classList.add('menu-open'); }
+    function close(){ if(t) clearTimeout(t); t = setTimeout(function(){ li.classList.remove('menu-open'); t=null; }, CLOSE_DELAY); }
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    li.addEventListener('focusin', open);
+    li.addEventListener('focusout', function(){ if(!li.contains(document.activeElement)) close(); });
+  });
+})();
+
+/* The BTC/VFX ticker script is homepage-only and was removed with its markup.
+   Leaving it in would fire a network request every 60 seconds on a page whose
+   whole point is to be fast and cheap for a crawler to read. */
+
+/* The scroll-reveal observer was also dropped: this page has no .hm-reveal
+   elements, and content that starts at opacity:0 is a liability on a page
+   built to be read by crawlers. Everything here is visible on first paint. */
+</script>
+</body>
+</html>
